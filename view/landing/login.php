@@ -11,7 +11,7 @@ include 'landingheader.php';
 ?>
 
 <div id="login-div">
-    <form id="login-form" action="/final-we-project18/controller/logincontroller.php" method="post">
+    <form id="login-form" action="/own_we_project18/controller/logincontroller.php" method="post">
         <h1>log in</h1>
         <input class="form-control" name="email" type="text" required="" placeholder="E-Mail">
         <input class="form-control" name="password" type="password" required="" placeholder="Password">
@@ -20,7 +20,7 @@ include 'landingheader.php';
             <label class="form-check-label" for="formCheck-1">Stay logged in</label>
         </div>
         <p><button class="btn btn-primary" type="submit">LOG IN</button></p>
-        <a href="resetpassword.php">Forgot password?</a>
+        <a href="enteremail.php">Forgot password?</a>
     </form>
 </div>
 

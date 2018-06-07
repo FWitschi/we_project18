@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Fabian
- * Date: 07.06.18
- * Time: 21:59
- */
-
-
 
 ?>
 
@@ -26,12 +18,12 @@
 
 <body id="base-div">
 <div id="login-div">
-    <form action="enteremail.php" method="post" id="login-form">
+    <form id="login-form" action="/own_we_project18/controller/sendemailcontroller.php" method="post">
         <h1>Reset Password</h1>
         <p>Enter your email to reset your password</p>
-        <input class="form-control" type="email" required="" placeholder="Email">
+        <input class="form-control" name="email" type="email" required="" placeholder="Email">
         <p>
-            <button class="btn btn-primary" type="submit">SEND</button>
+            <button class="btn btn-primary" type="submit">RESET</button>
         </p>
     </form>
 </div>

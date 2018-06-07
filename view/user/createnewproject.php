@@ -13,7 +13,7 @@ include 'newprojectcontroller.php';
 
 <h1 class="menu-heading">Create new Project</h1>
 <div>
-    <form id="createproject-form" action="/final-we-project18/controller/newprojectcontroller.php" method="post">
+    <form id="createproject-form" action="/own_we_project18/controller/newprojectcontroller.php" method="post">
         <p class="newproject-paragraph">
             <label>Project Owner</label>
         </p>
