@@ -14,5 +14,5 @@ use doa\ProjectDOA;
 
 if (ProjectDOA::addProject($_POST['projectname'], $_POST['projectdescrip'], $_POST['startdate'], $_POST['timeplanned'], $_POST['projectowner'], $_POST['users'], Database::connect())) {
     $extra = 'view/user/projectoverview.php';
-    header("Location: http://localhost/final-we-project18/$extra");
+    header("Location: http://localhost/own_we_project18/$extra");
 }

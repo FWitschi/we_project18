@@ -32,6 +32,13 @@ class ProjectDOA
 
     }
 
+    public static function getAllProjects($connection)
+    {
+        $stmt = $connection->prepare("SELECT * FROM project");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
     public static function deleteProject($projectId)
     {
 

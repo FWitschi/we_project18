@@ -6,7 +6,7 @@
  * Time: 17:08
  */
 
-namespace view;
+namespace user;
 
 
 class TemplateView

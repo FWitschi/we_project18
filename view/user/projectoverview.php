@@ -7,83 +7,44 @@
  */
 
 include 'userheader.php';
+include 'own_we_project18/controller/projectoverviewcontroller.php';
+
+use user\TemplateView;
 
 ?>
 
-<h1 class="menu-heading">Project Overview</h1>
-<div>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 1</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 2</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 3</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 4</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 5</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 6</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-0 align-self-center">
-                    <span>Project 7</span>
-                </div>
-                <div class="col align-self-center">
-                    <button class="btn btn-primary" type="button">VIEW PDF</button>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
+    <h1 class="menu-heading">Project Overview</h1>
+    <table class="table">
+    <thead>
+    <tr>
+        <th>Project Name</th>
+        <th>Project Description</th>
+        <th>Project Startdate</th>
+        <th>Project Duration</th>
+        <th>Project Owner</th>
+        <th>Project Employees</th>
+        <th>View PDF</th>
+    </tr>
+    </thead>
+    <tbody>
 
-<?php include 'userfooter.php' ; ?>
+        <?php
+
+        $all_projects = getProjects();
+
+        foreach($all_projects as $project): ?>
+            <tr>
+                <td><?php echo TemplateView::noHTML($project['PROJECT_NAME']); ?></td>
+                <td><?php echo TemplateView::noHTML($project['PROJECT_DESCRIPTION']); ?></td>
+                <td><?php echo TemplateView::noHTML($project['P_STARTDATE']); ?></td>
+                <td><?php echo TemplateView::noHTML($project['P_DURATION']); ?></td>
+                <td><?php echo TemplateView::noHTML($project['P_OWNER']); ?></td>
+                <td><?php echo TemplateView::noHTML($project['P_EMPLOYEES']); ?></td>
+                <td> <button class="btn btn-primary" type ="button">VIEW PDF</button></td >
+            </tr>
+        <?php endforeach; ?>
+
+    </tbody>
+    </table>
+
+<?php include 'userfooter.php'; ?>
