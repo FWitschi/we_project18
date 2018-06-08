@@ -33,6 +33,7 @@ class Database
             ];
             self::$pdo = new PDO("mysql:host=$host;dbname=$db;charset=$charset", $user, $pass, $options);
 
+
         } catch (PDOException $e) {
             echo "Connection failed " . $e->getMessage();
         }

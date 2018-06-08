@@ -9,6 +9,8 @@
 include 'userheader.php';
 include 'newprojectcontroller.php';
 
+$someVar = $_SESSION['userID'];
+
 ?>
 
 <h1 class="menu-heading">Create new Project</h1>
@@ -25,9 +27,7 @@ include 'newprojectcontroller.php';
         <p class="newproject-paragraph">
             <label>Project Description</label>
         </p>
-        <textarea class="form-control" name="projectdescrip" rows="10" cols="1" required="" placeholder="Enter a comprehensive description of this project">
-
-        </textarea>
+        <textarea class="form-control" name="projectdescrip" rows="10" cols="1" required="" placeholder="Enter a comprehensive description of this project"></textarea>
         <p class="newproject-paragraph">
             <label>Add User</label>
         </p>

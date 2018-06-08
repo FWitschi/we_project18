@@ -12,11 +12,12 @@ namespace doa;
 class ProjectDOA
 {
 
-    public static function addProject($project_name, $project_description, $project_start_date, $project_duration, $project_owner, $project_employees, $connection)
+    public static function addProject($project_name, $user_id, $project_description, $project_start_date, $project_duration, $project_owner, $project_employees, $connection)
     {
-        $stmt = $connection->prepare("INSERT INTO project (PROJECT_NAME, PROJECT_DESCRIPTION, P_STARTDATE, P_DURATION, P_OWNER, P_EMPLOYEES) VALUES (:project_name
+        $stmt = $connection->prepare("INSERT INTO project (PROJECT_NAME, USER_ID, PROJECT_DESCRIPTION, P_STARTDATE, P_DURATION, P_OWNER, P_EMPLOYEES) VALUES (:project_name, :user_id
                   , :project_description, :project_start_date, :project_duration, :project_owner, :project_employees)");
         $stmt->bindParam(':project_name', $project_name);
+        $stmt->bindParam(':user_id', $user_id);
         $stmt->bindParam(':project_description', $project_description);
         $stmt->bindParam(':project_start_date', $project_start_date);
         $stmt->bindParam(':project_duration', $project_duration);

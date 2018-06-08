@@ -12,7 +12,7 @@ include 'userheader.php';
 
 <h1 class="menu-heading">Profile</h1>
 <div>
-    <form id="createproject-form">
+    <form id="createproject-form" action="/own_we_project/controller/editusercontroller.php" method="post">
         <p class="newproject-paragraph">
             <label>First name</label>
         </p>
@@ -30,7 +30,7 @@ include 'userheader.php';
         </p>
         <input class="form-control" type="password" placeholder="Password">
         <p class="text-center newproject-paragraph">
-            <button class="btn btn-primary" type="button">Save Changes</button>
+            <button class="btn btn-primary" type="submit">Save Changes</button>
         </p>
     </form>
 </div>

@@ -18,6 +18,7 @@ class UserDOA
         $user = $stmt->fetch();
 
         if ($password == $user['PASSWORD']) {
+            $_SESSION['userID'] = $user['ID'];
             return true;
         } else {
             return false;
