@@ -35,25 +35,28 @@ include 'userheader.php';
                 <td id="project_description"><?php echo $project['PROJECT_DESCRIPTION']; ?></td>
                 <td id="project_startdate"><?php echo $project['P_STARTDATE']; ?></td>
                 <td id="project_duration"><?php echo $project['P_DURATION']; ?></td>
-                <td id="project_owner"><?php echo $project['P_OWNER'] . $obj; ?></td>
+                <td id="project_owner"><?php echo $project['P_OWNER']; ?></td>
                 <td id="project_employees"><?php echo $project['P_EMPLOYEES']; ?></td>
             </tr>
         <?php endforeach; ?>
 
         </tbody>
     </table>
-<form action="/own_we_project18/controller/pdf/PDFHandler.php" method="get">
     <p align="center">Select the a project (or all) to be displayed in a .pdf</p>
-    <p align="center">
+    <form action="/own_we_project18/controller/pdf/PDFHandler.php" method="get">
+        <p align="center">
         <select>
-            <option>
-                All projects
-            </option>
+            <option value="allprojects">All Projects</option>
+            <?php
+            $all_projects = getProjects();
+            foreach($all_projects as $project): ?>
+                <?php echo "<option value='". $project['PROJECT_NAME']. "'>" . $project['PROJECT_NAME'] ; ?>
+            <?php endforeach; ?>
         </select>
-    </p>
-    <p align="center">
-        <button class="btn btn-primary" type="submit">SHOW PDF</button>
-    </p>
-</form>
+        </p>
+        <p align="center">
+            <button class="btn btn-primary" type="submit">SHOW PDF</button>
+        </p>
+    </form>
 
 <?php include 'userfooter.php'; ?>
