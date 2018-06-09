@@ -20,6 +20,6 @@ try {
         $extra = 'view/user/projectoverview.php';
         header("Location: http://$host$uri/$extra");
     }
-} catch (HttpException $exception) {
+} catch (HTTPException $exception) {
     echo "FAILED" . $exception->getMessage();
 }

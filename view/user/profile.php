@@ -32,6 +32,9 @@ include 'userheader.php';
         <p class="text-center newproject-paragraph">
             <button class="btn btn-primary" type="submit">Save Changes</button>
         </p>
+        <p class="text-center newproject-paragraph">
+            <a class="btn btn-primary" role="button" href="/own_we_project18/view/user/questiondeleteuser.php">DELETE ACCOUNT</a>
+        </p>
     </form>
 </div>
 

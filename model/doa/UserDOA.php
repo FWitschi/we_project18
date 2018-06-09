@@ -35,14 +35,20 @@ class UserDOA
         $stmt->execute();
     }
 
-    public static function editUser()
+    public static function editUser($user_id, $selected_property, $new_value, $connection)
     {
+        $stmt = $connection->prepare("UPDATE user SET " . $selected_property . " = ? WHERE ID = ?");
+        $stmt->execute([$new_value], [$user_id]);
 
+        return true;
     }
 
-    public static function deleteUser($userId)
+    public static function deleteUser($user_id, $connection)
     {
+        $stmt = $connection->prepare("DELETE FROM user WHERE ID = ?");
+        $stmt->execute([$user_id]);
 
+        return true;
     }
 
 }

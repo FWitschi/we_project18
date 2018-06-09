@@ -33,6 +33,7 @@ class ProjectDOA
     {
         $stmt = $connection->prepare("SELECT * FROM project WHERE PROJECT_NAME = ?");
         $stmt->execute([$project_name]);
+
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
@@ -40,12 +41,23 @@ class ProjectDOA
     {
         $stmt = $connection->prepare("SELECT * FROM project");
         $stmt->execute();
+
         return $stmt->fetchAll();
     }
 
-    public static function deleteProject($projectId)
-    {
+    public static function updateProject($project_name, $selected_property, $new_value, $connection) {
+        $stmt = $connection->prepare("UPDATE project SET " . $selected_property . " = ? WHERE PROJECT_NAME = ?");
+        $stmt->execute([$new_value], [$project_name]);
 
+        return true;
+    }
+
+    public static function deleteProject($project_name, $connection)
+    {
+        $stmt = $connection->prepare("DELETE FROM project WHERE PROJECT_NAME = ?");
+        $stmt->execute([$project_name]);
+
+        return true;
     }
 
 }
