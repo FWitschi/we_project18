@@ -45,12 +45,12 @@ include 'userheader.php';
     <p align="center">Select the a project (or all) to be displayed in a .pdf</p>
     <form action="/own_we_project18/controller/pdf/PDFHandler.php" method="get">
         <p align="center">
-        <select>
-            <option value="allprojects">All Projects</option>
+        <select name="select_project">
+            <option value="all_projects">All Projects</option>
             <?php
             $all_projects = getProjects();
             foreach($all_projects as $project): ?>
-                <?php echo "<option value='". $project['PROJECT_NAME']. "'>" . $project['PROJECT_NAME'] ; ?>
+                <?php echo "<option value='" . $project['PROJECT_NAME']. "'>" . $project['PROJECT_NAME'] ; ?>
             <?php endforeach; ?>
         </select>
         </p>

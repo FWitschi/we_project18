@@ -8,6 +8,7 @@
 
 namespace doa;
 
+use PDO;
 
 class ProjectDOA
 {
@@ -28,9 +29,11 @@ class ProjectDOA
         return true;
     }
 
-    public static function getProject($userId)
+    public static function getProject($project_name, $connection)
     {
-
+        $stmt = $connection->prepare("SELECT * FROM project WHERE PROJECT_NAME = ?");
+        $stmt->execute([$project_name]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public static function getAllProjects($connection)
