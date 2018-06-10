@@ -14,6 +14,7 @@ working on the project, Project Starting Date, Project Duration (number in weeks
 projects are listed in the "home" page including the respective properties. The user may view all
 or a specifically selected project as a pdf and print it as needed.
 <br>
+<br>
 #####Functionalities - Brief Description
 _Register_
 <br>
