@@ -28,11 +28,11 @@ include 'userheader.php';
         <p class="newproject-paragraph">
             <label>Password</label>
         </p>
-        <input class="form-control" name="PASSWORD" type="password" placeholder="Password">
+        <input class="form-control" name="PASSWORD" type="password" placeholder="Password" minlength="4">
         <p class="text-center newproject-paragraph">
             <button class="btn btn-primary" type="submit">Save Changes</button>
         </p>
-        <p class="text-center newproject-paragraph">
+        <p class="text-center">
             <a class="btn btn-primary" role="button" href="/own_we_project18/view/user/questiondeleteuser.php">DELETE ACCOUNT</a>
         </p>
     </form>
