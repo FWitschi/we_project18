@@ -12,8 +12,7 @@ require_once('../model/doa/UserDOA.php');
 use database\Database;
 use doa\UserDOA;
 
-setcookie("user_id", 3);
-
 if (UserDOA::deleteUser($_COOKIE['user_id'], Database::connect())) {
+    session_destroy();
     header("Location: http://localhost/own_we_project18/view/landing/login.php");
 }

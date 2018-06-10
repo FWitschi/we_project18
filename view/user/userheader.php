@@ -36,8 +36,8 @@
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="profile.php">Profile</a></li>
             </ul>
             <form class="form-inline"><input class="form-control" type="search" placeholder="Search..."></form>
-            <form class="form-inline ml-auto">
-                <p><a class="btn btn-primary" role="button" href="../landing/login.php">Log out</a></p>
+            <form class="form-inline ml-auto" action="/own_we_project18/controller/logoutcontroller.php" method="post">
+                <p><button class="btn btn-primary" type="submit">LOG OUT</button></p>
             </form>
         </div>
     </div>

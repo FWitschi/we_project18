@@ -25,7 +25,7 @@ include 'landingheader.php';
                     + manage up to 10 projects simultaneously<br>
                     + free customer service Monday to Friday (8-17)<br><br>
                     Price<br><big>$0</big><br><br></p>
-                <p><a class="btn btn-primary" role="button" href="signup.php">SIGN UP</a></p>
+                <p><a class="btn btn-primary" role="button" href="getitfree.php">SIGN UP</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Premium</h2>
@@ -33,7 +33,7 @@ include 'landingheader.php';
                     + manage up to 50 projects simultaneously<br>
                     + free customer service 27/7<br>
                     Price<br><big>$5</big><br>per month/user<br><br></p>
-                <p><a class="btn btn-primary" role="button" href="signup.php" style="font-size:14px;">SIGN UP</a></p>
+                <p><a class="btn btn-primary" role="button" href="getitfree.php" style="font-size:14px;">SIGN UP</a></p>
             </div>
             <div class="col-md-4">
                 <h4>Business</h4>
@@ -42,7 +42,7 @@ include 'landingheader.php';
                     + free customer service 27/7<br>
                     + print projects' info as a pdf<br>
                     Price<br><big>$10</big><br>per month/user<br><br></p>
-                <p><a class="btn btn-primary" role="button" href="signup.php">SIGN UP</a></p>
+                <p><a class="btn btn-primary" role="button" href="getitfree.php">SIGN UP</a></p>
             </div>
         </div>
     </div>
