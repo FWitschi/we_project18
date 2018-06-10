@@ -24,9 +24,16 @@
 <body id="base-div">
 
 <nav class="navbar navbar-light navbar-expand-md" id="navbar">
-    <div class="container-fluid"><a class="navbar-brand" href="#"><img src="../assets/img/timecatcher-icon.png" class="logo"><strong>&nbsp; Project Manager</strong></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div
-                class="collapse navbar-collapse" id="navcol-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/img/timecatcher-icon.png" class="logo">
+            <strong>&nbsp; Project Manager</strong>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="features.php">Features</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="pricing.php">pricing</a></li>
