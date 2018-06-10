@@ -1,12 +1,12 @@
-##Web Engineering Project 2018
+## Web Engineering Project 2018
 <br>
-#####Table of Contents
 
+##### Table of Contents
+sdfssdfv
+<br>
+<br>
 
-xcvxvxycvxycvxcv
-<br>
-<br>
-#####Project Manager - Description
+##### Project Manager - Description
 The web-application Project Manager is a small tool that allows private or business users to
 store and manage their own projects. They have the ability to create or modify/delete a project 
 (properties include: Project Name, Project Owner, Project Description, Project Employees (who is
@@ -15,12 +15,14 @@ projects are listed in the "home" page including the respective properties. The 
 or a specifically selected project as a pdf and print it as needed.
 <br>
 <br>
-#####Functionalities - Brief Description
+
+##### Functionalities - Brief Description
 _Register_
 <br>
 Enter your information to create a user account that is stored in the database
 <br>
 <br>
+
 _Login_
 <br>
 Log in the page if you have a create your account - forgot your password? No worries, press the link
@@ -28,6 +30,7 @@ below and reset your password with a link sent via email (attention: email only 
 to a remote server)
 <br>
 <br>
+
 _Project Overview_
 <br>
 View all projects that you have created on one page with the properties inclusive. In addition
@@ -41,6 +44,7 @@ name, a project description, the names of the employees working on the project, 
 the planned time (numbers in weeks) to spend on the project.
 <br>
 <br>
+
 _Profile_
 <br>
 Just update or delete your account as you wish
