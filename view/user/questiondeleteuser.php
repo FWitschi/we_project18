@@ -27,9 +27,7 @@
         <h1>DELETE PROJECT</h1>
         <p>Press OK to permanently delete your account</p>
         <p>
-        <div class="btn-group" role="group">
             <button class="btn btn-primary" type="submit">OK</button>
-        </div>
         </p>
     </form>
 </div>

@@ -27,9 +27,7 @@
         <h1>DELETE PROJECT</h1>
         <p>Press OK to permanently delete the project from the database</p>
         <p>
-        <div class="btn-group" role="group">
             <button class="btn btn-primary" type="submit">OK</button>
-        </div>
         </p>
     </form>
 </div>

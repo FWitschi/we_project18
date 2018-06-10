@@ -19,6 +19,8 @@ class UserDOA
 
         if ($password == $user['PASSWORD']) {
             $_SESSION['userID'] = $user['ID'];
+            setcookie('user_id', $user['ID'], time() + 86400, '/');
+            setcookie('email', $user['EMAIL'], time() + 86400, '/');
             return true;
         } else {
             return false;
@@ -37,10 +39,10 @@ class UserDOA
 
     public static function editUser($user_id, $selected_property, $new_value, $connection)
     {
-        $stmt = $connection->prepare("UPDATE user SET " . $selected_property . " = ? WHERE ID = ?");
-        $stmt->execute([$new_value], [$user_id]);
-
-        return true;
+        $stmt = $connection->prepare("UPDATE user SET " . $selected_property . " = :new_value WHERE ID = :user_id");
+        $stmt->bindParam(':new_value', $new_value);
+        $stmt->bindParam(':user_id', $user_id);
+        $stmt->execute();
     }
 
     public static function deleteUser($user_id, $connection)

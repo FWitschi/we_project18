@@ -24,9 +24,12 @@
 <body id="home-div">
 
 <nav class="navbar navbar-light navbar-expand-md">
-    <div class="container-fluid"><a class="navbar-brand" href="#"><img src="../assets/img/timecatcher-icon.png" class="logo"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div
-                class="collapse navbar-collapse" id="navcol-1">
+    <div class="container-fluid"><a class="navbar-brand" href="projectoverview.php"><img src="../assets/img/timecatcher-icon.png" class="logo"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="projectoverview.php">Project Overview</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="createnewproject.php">Create Project</a></li>

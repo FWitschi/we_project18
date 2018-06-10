@@ -21,7 +21,7 @@ $someVar = $_SESSION['userID'];
         </p>
         <input class="form-control" name="projectowner" type="text" required="" placeholder="Enter the name of the project owner">
         <p class="newproject-paragraph">
-            <label>Project Name</label>
+            <label>Project Name (Remember: Name has to be unique)</label>
         </p>
         <input class="form-control" name="projectname" type="text" required="" placeholder="Enter a suitable project name">
         <p class="newproject-paragraph">

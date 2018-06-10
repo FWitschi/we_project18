@@ -13,5 +13,5 @@ use database\Database;
 use doa\ProjectDOA;
 
 function getProjects() {
-    return ProjectDOA::getAllProjects(Database::connect());
+    return ProjectDOA::getAllProjects($_COOKIE['user_id'], Database::connect());
 }

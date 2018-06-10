@@ -12,7 +12,6 @@ require_once('../model/doa/ProjectDOA.php');
 use database\Database;
 use doa\ProjectDOA;
 
-if (ProjectDOA::addProject($_POST['projectname'], 1, $_POST['projectdescrip'], $_POST['startdate'], $_POST['timeplanned'], $_POST['projectowner'], $_POST['users'], Database::connect())) {
-    $extra = 'view/user/projectoverview.php';
-    header("Location: http://localhost/own_we_project18/$extra");
+if (ProjectDOA::addProject($_POST['projectname'], $_COOKIE['user_id'], $_POST['projectdescrip'], $_POST['startdate'], $_POST['timeplanned'], $_POST['projectowner'], $_POST['users'], Database::connect())) {
+    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
 }

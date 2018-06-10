@@ -20,6 +20,7 @@ include 'userheader.php';
             <th>Project Duration</th>
             <th>Project Owner</th>
             <th>Project Employees</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -29,7 +30,10 @@ include 'userheader.php';
 
         $all_projects = getProjects();
 
+        $count = 0;
+
         foreach($all_projects as $project): ?>
+        <form>
             <tr>
                 <td id="project_name"><?php echo $project['PROJECT_NAME']; ?></td>
                 <td id="project_description"><?php echo $project['PROJECT_DESCRIPTION']; ?></td>
@@ -37,7 +41,10 @@ include 'userheader.php';
                 <td id="project_duration"><?php echo $project['P_DURATION']; ?></td>
                 <td id="project_owner"><?php echo $project['P_OWNER']; ?></td>
                 <td id="project_employees"><?php echo $project['P_EMPLOYEES']; ?></td>
+                <td id="modify_project"><?php echo '<a class="btn btn-primary" id="' . $count . '" role="button" href="../user/modifyproject.php">Modify</a>' ; ?></td>
             </tr>
+            <?php $count++ ; ?>
+        </form>
         <?php endforeach; ?>
 
         </tbody>

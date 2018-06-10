@@ -25,32 +25,39 @@
 <p></p>
 <h1 class="text-left menu-heading">Modify Project</h1>
 <div>
-    <form action="/own_we_project18/controller/editprojectcontroller.php" id="createproject-form">
+    <form action="/own_we_project18/controller/editprojectcontroller.php" id="createproject-form" method="post">
+        <p class="newproject-paragraph">
+            <label>Change Project Owner (Remember: Name has to be unique)</label>
+        </p>
+        <input class="form-control" name="P_OWNER" type="text" placeholder="Change project owner">
         <p class="newproject-paragraph">
             <label>Project Name</label>
         </p>
-        <input class="form-control" type="text" placeholder="Enter a suitable project name">
+        <input class="form-control" name="PROJECT_NAME" type="text" placeholder="Change project name">
         <p class="newproject-paragraph">
             <label>Project Description</label>
         </p>
-        <textarea class="form-control" rows="10" cols="1" placeholder="Enter a comprehensive description of this project"></textarea>
+        <textarea class="form-control" name="PROJECT_DESCRIPTION" rows="10" cols="1" placeholder="Change project description"></textarea>
         <p class="newproject-paragraph">
-            <label>Add User</label>
+            <label>Change Users</label>
         </p>
-        <input class="form-control" type="text" placeholder="Add users working on this project">
+        <input class="form-control" name="P_EMPLOYEES" type="text" placeholder="Change users working on this project">
         <p id="adduser-button" class="newproject-paragraph">
         <button class="btn btn-primary" onclick="addUser()" type="button">Add User</button>
         </p>
         <p class="newproject-paragraph">
-            <label>Starting Date</label>
+            <label>Change Starting Date</label>
         </p>
-        <input class="form-control" name="startdate" type="date" placeholder="Enter the starting date for this project" min="0" step="0.5">
+        <input class="form-control" name="P_STARTDATE" type="date" placeholder="Change starting date" min="0" step="0.5">
         <p class="newproject-paragraph">
-            <label>Total Time Planned</label>
+            <label>Change Total Time Planned</label>
         </p>
-        <input class="form-control" type="number" placeholder="Enter the total time scheduled for this project" min="0" step="0.5">
+        <input class="form-control" type="P_DURATION" placeholder="Change total time scheduled" min="0" step="0.5">
         <p class="text-center newproject-paragraph">
             <button class="btn btn-primary" type="submit">Change Properties</button>
+        </p>
+        <p class="text-center newproject-paragraph">
+            <a class="btn btn-primary" role="button" href="/own_we_project18/view/user/questiondeleteproject.php">DELETE PROJECT</a>
         </p>
     </form>
 </div>

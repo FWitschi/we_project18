@@ -12,23 +12,23 @@ include 'userheader.php';
 
 <h1 class="menu-heading">Profile</h1>
 <div>
-    <form id="createproject-form" action="/own_we_project/controller/editusercontroller.php" method="post">
+    <form id="createproject-form" action="/own_we_project18/controller/modifyusercontroller.php" method="post">
         <p class="newproject-paragraph">
             <label>First name</label>
         </p>
-        <input class="form-control" type="text" placeholder="First name">
+        <input class="form-control" name="FIRST_NAME" type="text" placeholder="First name">
         <p class="newproject-paragraph">
             <label>Last name</label>
         </p>
-        <input class="form-control" type="text" placeholder="Last name">
+        <input class="form-control" name="LAST_NAME" type="text" placeholder="Last name">
         <p class="newproject-paragraph">
             <label>Email</label>
         </p>
-        <input class="form-control" type="email" placeholder="Email">
+        <input class="form-control" name="EMAIL" type="email" placeholder="Email">
         <p class="newproject-paragraph">
             <label>Password</label>
         </p>
-        <input class="form-control" type="password" placeholder="Password">
+        <input class="form-control" name="PASSWORD" type="password" placeholder="Password">
         <p class="text-center newproject-paragraph">
             <button class="btn btn-primary" type="submit">Save Changes</button>
         </p>

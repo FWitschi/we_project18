@@ -37,25 +37,25 @@ class ProjectDOA
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public static function getAllProjects($connection)
+    public static function getAllProjects($user_id, $connection)
     {
-        $stmt = $connection->prepare("SELECT * FROM project");
-        $stmt->execute();
+        $stmt = $connection->prepare("SELECT * FROM project WHERE USER_ID = ?");
+        $stmt->execute([$user_id]);
 
         return $stmt->fetchAll();
     }
 
-    public static function updateProject($project_name, $selected_property, $new_value, $connection) {
-        $stmt = $connection->prepare("UPDATE project SET " . $selected_property . " = ? WHERE PROJECT_NAME = ?");
-        $stmt->execute([$new_value], [$project_name]);
-
-        return true;
+    public static function updateProject($project_id, $selected_property, $new_value, $connection) {
+        $stmt = $connection->prepare("UPDATE project SET " . $selected_property . " :new_value WHERE ID = :project_id");
+        $stmt->bindParam(':new_value', $new_value);
+        $stmt->bindParam(':project_id', $project_id);
+        $stmt->execute();
     }
 
-    public static function deleteProject($project_name, $connection)
+    public static function deleteProject($project_id, $connection)
     {
         $stmt = $connection->prepare("DELETE FROM project WHERE PROJECT_NAME = ?");
-        $stmt->execute([$project_name]);
+        $stmt->execute([$project_id]);
 
         return true;
     }
