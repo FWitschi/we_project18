@@ -8,7 +8,10 @@
 
 namespace database;
 
+require_once('../model/config/Config.php');
+
 use \PDO;
+use config\Config;
 
 class Database
 {
@@ -19,20 +22,12 @@ class Database
     {
 
         try {
-
-            $host = 'localhost';
-            $db   = 'weproject';
-            $user = 'root';
-            $pass = 'root';
-            $charset = 'utf8mb4';
-
             $options = [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES   => false,
             ];
-            self::$pdo = new PDO("mysql:host=$host;dbname=$db;charset=$charset", $user, $pass, $options);
-
+            self::$pdo = new PDO(Config::pdoConfig("dsn"), Config::pdoConfig("user"), Config::pdoConfig("password"), $options);
 
         } catch (PDOException $e) {
             echo "Connection failed " . $e->getMessage();

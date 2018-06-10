@@ -6,19 +6,19 @@
  * Time: 21:46
  */
 
-namespace model\config\Config;
+namespace config;
 
 class Config
 {
 
-    protected static $iniFile = "final-we-project18/model/config/config.env";
+    protected static $iniFile = "/Applications/MAMP/htdocs/own_we_project18/model/config/config.env";
     protected static $config = [];
 
     public static function init()
     {
         if (file_exists(self::$iniFile)) {
             $databaseConfig = parse_ini_file(self::$iniFile);
-            self::$config["pdo"]["dsn"] = $databaseConfig ["driver"] . ":host=" . $databaseConfig ["host"] . "; dbname=" . $databaseConfig ["database"];
+            self::$config["pdo"]["dsn"] = $databaseConfig["driver"] . ":host=" . $databaseConfig["host"] . "; dbname=" . $databaseConfig["database"];
             self::$config["pdo"]["user"] = $databaseConfig["user"];
             self::$config["pdo"]["password"] = $databaseConfig["password"];
         } else {
@@ -35,6 +35,6 @@ class Config
     {
         if (empty(self::$config))
             self::init();
-        return self::$config["pdo"][$key];
+            return self::$config["pdo"][$key];
     }
 }
