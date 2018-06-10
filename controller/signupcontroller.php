@@ -15,7 +15,10 @@ use doa\UserDOA;
 if ($_POST['password'] == $_POST['passwordRep']) {
     UserDOA::registerUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['password'], Database::connect());
     setcookie('email', $_POST['email']);
-    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/user/projectoverview.php";
+    header("Location: http://$host$uri/$extra");
 } else {
     echo "NOT SAME PASSWORD!";
 }

@@ -33,7 +33,10 @@ if (isset($_POST)) {
     if ($_POST['P_DURATION'] != "") {
         ProjectDOA::updateProject($_COOKIE['selected_project_id'], "P_DURATION", $_POST['P_DURATION'], Database::connect());
     }
-    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/user/projectoverview.php";
+    header("Location: http://$host$uri/$extra");
 } else {
 
 }

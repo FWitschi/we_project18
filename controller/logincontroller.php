@@ -13,7 +13,13 @@ use database\Database;
 use doa\UserDOA;
 
 if (UserDOA::verifyUser($_POST['email'], $_POST['password'], Database::connect())) {
-    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/user/projectoverview.php";
+    header("Location: http://$host$uri/$extra");
 } else {
-    header("Location: http://localhost/own_we_project18/view/landing/wrongcredentials.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/landing/wrongcredentials.php";
+    header("Location: http://$host$uri/$extra");
 }

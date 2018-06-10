@@ -15,5 +15,8 @@ use doa\ProjectDOA;
 setcookie('selected_project_id', 0);
 
 if (ProjectDOA::deleteProject($_COOKIE['selected_project_id'], Database::connect())) {
-    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/user/projectoverview.php";
+    header("Location: http://$host$uri/$extra");
 }

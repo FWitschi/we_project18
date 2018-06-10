@@ -11,7 +11,7 @@ namespace config;
 class Config
 {
 
-    protected static $iniFile = "/Applications/MAMP/htdocs/own_we_project18/model/config/config.env";
+    protected static $iniFile = "/model/config/config.env";
     protected static $config = [];
 
     public static function init()

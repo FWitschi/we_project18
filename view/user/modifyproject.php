@@ -25,7 +25,7 @@
 <p></p>
 <h1 class="text-left menu-heading">Modify Project</h1>
 <div>
-    <form action="/own_we_project18/controller/editprojectcontroller.php" id="createproject-form" method="post">
+    <form action="/controller/editprojectcontroller.php" id="createproject-form" method="post">
         <p class="newproject-paragraph">
             <label>Change Project Owner (Remember: Name has to be unique)</label>
         </p>
@@ -57,7 +57,7 @@
             <button class="btn btn-primary" type="submit">Change Properties</button>
         </p>
         <p class="text-center newproject-paragraph">
-            <a class="btn btn-primary" role="button" href="/own_we_project18/view/user/questiondeleteproject.php">DELETE PROJECT</a>
+            <a class="btn btn-primary" role="button" href="/view/user/questiondeleteproject.php">DELETE PROJECT</a>
         </p>
     </form>
 </div>

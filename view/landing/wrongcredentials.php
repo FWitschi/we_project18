@@ -14,7 +14,7 @@ include 'landingheader.php';
         <form id="login-form">
             <h1>Something went Wrong</h1>
             <p>You email and/or password were wrong</p>
-            <p><a class="btn btn-primary" role="button" href="../landing/login.php">GO BACK TO LOG IN</a></p>
+            <p><a class="btn btn-primary" role="button" href="/landing/login.php">GO BACK TO LOG IN</a></p>
         </form>
     </div>
 

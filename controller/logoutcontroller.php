@@ -8,4 +8,7 @@
 
 session_destroy();
 
-header("Location: http://localhost/own_we_project18/view/landing/login.php");
+$host = $_SERVER['HTTP_HOST'];
+$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+$extra = "view/landing/login.php";
+header("Location: http://$host$uri/$extra");

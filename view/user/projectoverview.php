@@ -26,7 +26,7 @@ include 'userheader.php';
         <tbody>
         <?php
 
-        include '/Applications/MAMP/htdocs/own_we_project18/controller/projectoverviewcontroller.php';
+        include '/controller/projectoverviewcontroller.php';
 
         $all_projects = getProjects();
 

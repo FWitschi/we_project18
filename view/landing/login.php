@@ -11,7 +11,7 @@ include 'landingheader.php';
 ?>
 
 <div id="login-div">
-    <form id="login-form" action="/own_we_project18/controller/logincontroller.php" method="post">
+    <form id="login-form" action="/controller/logincontroller.php" method="post">
         <h1>log in</h1>
         <input class="form-control" name="email" type="text" required="" placeholder="E-Mail">
         <input class="form-control" name="password" type="password" required="" placeholder="Password">

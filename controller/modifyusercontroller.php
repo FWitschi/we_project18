@@ -25,7 +25,10 @@ if (isset($_POST)) {
     if ($_POST['PASSWORD'] != "") {
         UserDOA::editUser($_COOKIE['user_id'], "PASSWORD", $_POST['PASSWORD'], Database::connect());
     }
-    header("Location: http://localhost/own_we_project18/view/user/projectoverview.php");
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $extra = "view/user/projectoverview.php";
+    header("Location: http://$host$uri/$extra");
 } else {
 
 }

@@ -38,7 +38,8 @@
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="features.php">Features</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="pricing.php">pricing</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="login.php">Log in</a></li>
-            </ul><a class="btn btn-primary" role="button" href="signup.php">SIGN UP</a>
+            </ul>
+            <a class="btn btn-primary" role="button" href="signup.php">SIGN UP</a>
         </div>
     </div>
 </nav>

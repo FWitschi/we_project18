@@ -12,7 +12,7 @@ include 'userheader.php';
 
 <h1 class="menu-heading">Profile</h1>
 <div>
-    <form id="createproject-form" action="/own_we_project18/controller/modifyusercontroller.php" method="post">
+    <form id="createproject-form" action="/controller/modifyusercontroller.php" method="post">
         <p class="newproject-paragraph">
             <label>First name</label>
         </p>
@@ -33,7 +33,7 @@ include 'userheader.php';
             <button class="btn btn-primary" type="submit">Save Changes</button>
         </p>
         <p class="text-center">
-            <a class="btn btn-primary" role="button" href="/own_we_project18/view/user/questiondeleteuser.php">DELETE ACCOUNT</a>
+            <a class="btn btn-primary" role="button" href="/view/user/questiondeleteuser.php">DELETE ACCOUNT</a>
         </p>
     </form>
 </div>

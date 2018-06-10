@@ -18,7 +18,7 @@
 
 <body id="base-div">
 <div id="login-div">
-    <form id="login-form" action="/own_we_project18/controller/sendemailcontroller.php" method="post">
+    <form id="login-form" action="/controller/sendemailcontroller.php" method="post">
         <h1>Reset Password</h1>
         <p>Enter your email to reset your password</p>
         <input class="form-control" name="email" type="email" required="" placeholder="Email">

@@ -23,7 +23,7 @@
 
 <body id="base-div">
 <div id="login-div">
-    <form id="login-form" action="/own_we_project18/controller/resetpasswordcontroller.php" method="post">
+    <form id="login-form" action="/controller/resetpasswordcontroller.php" method="post">
         <h1>Reset password</h1>
         <label></label>
         <input class="form-control" type="text" required="" placeholder="Enter your answer here" minlength="4">

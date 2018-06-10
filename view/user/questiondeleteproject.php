@@ -23,7 +23,7 @@
 
 <body id="base-div">
 <div id="login-div">
-    <form action="/own_we_project18/controller/deleteprojectcontroller.php" method="post" id="login-form">
+    <form action="/controller/deleteprojectcontroller.php" method="post" id="login-form">
         <h1>DELETE PROJECT</h1>
         <p>Press OK to permanently delete the project from the database</p>
         <p>
