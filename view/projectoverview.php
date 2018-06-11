@@ -26,7 +26,7 @@ include 'userheader.php';
         <tbody>
         <?php
 
-        include '/controller/projectoverviewcontroller.php';
+        include '../controller/projectoverviewcontroller.php';
 
         $all_projects = getProjects();
 
@@ -41,7 +41,7 @@ include 'userheader.php';
                 <td id="project_duration"><?php echo $project['P_DURATION']; ?></td>
                 <td id="project_owner"><?php echo $project['P_OWNER']; ?></td>
                 <td id="project_employees"><?php echo $project['P_EMPLOYEES']; ?></td>
-                <td id="modify_project"><?php echo '<a class="btn btn-primary" id="' . $count . '" role="button" href="../user/modifyproject.php">Modify</a>' ; ?></td>
+                <td id="modify_project"><?php echo '<a class="btn btn-primary" id="' . $count . '" role="button" href="modifyproject.php">Modify</a>' ; ?></td>
             </tr>
             <?php $count++ ; ?>
         </form>
@@ -50,7 +50,7 @@ include 'userheader.php';
         </tbody>
     </table>
     <p align="center">Select the a project (or all) to be displayed in a .pdf</p>
-    <form action="/own_we_project18/controller/pdf/PDFHandler.php" method="get">
+    <form action="../pdf/PDFHandler.php" method="get">
         <p align="center">
         <select name="select_project">
             <option value="all_projects">All Projects</option>

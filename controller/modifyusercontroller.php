@@ -6,8 +6,8 @@
  * Time: 20:05
  */
 
-require_once('../model/database/Database.php');
-require_once('../model/doa/UserDOA.php');
+require_once('../database/Database.php');
+require_once('../doa/UserDOA.php');
 
 use database\Database;
 use doa\UserDOA;
@@ -26,9 +26,8 @@ if (isset($_POST)) {
         UserDOA::editUser($_COOKIE['user_id'], "PASSWORD", $_POST['PASSWORD'], Database::connect());
     }
     $host = $_SERVER['HTTP_HOST'];
-    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    $extra = "view/user/projectoverview.php";
-    header("Location: http://$host$uri/$extra");
+    $extra = "../view/projectoverview.php";
+    header("Location: http://$host/$extra");
 } else {
 
 }

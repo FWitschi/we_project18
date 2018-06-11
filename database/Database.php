@@ -8,7 +8,7 @@
 
 namespace database;
 
-require_once('../model/config/Config.php');
+require_once('../config/Config.php');
 
 use \PDO;
 use config\Config;

@@ -14,17 +14,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600">
-    <link rel="stylesheet" href="../assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="../assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body id="home-div">
 
 <nav class="navbar navbar-light navbar-expand-md">
-    <div class="container-fluid"><a class="navbar-brand" href="projectoverview.php"><img src="../assets/img/timecatcher-icon.png" class="logo"></a>
+    <div class="container-fluid"><a class="navbar-brand" href="projectoverview.php"><img src="assets/img/timecatcher-icon.png" class="logo"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="profile.php">Profile</a></li>
             </ul>
             <form class="form-inline"><input class="form-control" type="search" placeholder="Search..."></form>
-            <form class="form-inline ml-auto" action="/own_we_project18/controller/logoutcontroller.php" method="post">
+            <form class="form-inline ml-auto" action="controller/logoutcontroller.php" method="post">
                 <p><button class="btn btn-primary" type="submit">LOG OUT</button></p>
             </form>
         </div>

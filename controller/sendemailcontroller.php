@@ -9,6 +9,8 @@
 $to = $_POST['email'];
 $subject = "Reset password";
 
+$host = $_SERVER['HTTP_HOST'];
+$extra = "view/resetpassword.php";
 $message = "
 <html>
     <head>
@@ -16,7 +18,7 @@ $message = "
     </head>
     <body>
         <p>You are seeing this email because you desire to reset your password; please click the following link to proceed</p>
-        <a href='http://localhost/own_we_project18/view/landing/resetpassword.php'>Click here to reset your password</a>
+        <a href='http:// . $host . / . $extra'>Click here to reset your password</a>
        </body>
 </html>
 ";

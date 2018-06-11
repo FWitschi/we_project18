@@ -6,8 +6,8 @@
  * Time: 17:12
  */
 
-require_once('../model/database/Database.php');
-require_once('../model/doa/ProjectDOA.php');
+require_once('../database/Database.php');
+require_once('../doa/ProjectDOA.php');
 
 use database\Database;
 use doa\ProjectDOA;
@@ -34,8 +34,7 @@ if (isset($_POST)) {
         ProjectDOA::updateProject($_COOKIE['selected_project_id'], "P_DURATION", $_POST['P_DURATION'], Database::connect());
     }
     $host = $_SERVER['HTTP_HOST'];
-    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    $extra = "view/user/projectoverview.php";
+    $extra = "../view/projectoverview.php";
     header("Location: http://$host$uri/$extra");
 } else {
 

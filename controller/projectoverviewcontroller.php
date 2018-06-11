@@ -6,8 +6,8 @@
  * Time: 10:43
  */
 
-require_once('../model/database/Database.php');
-require_once('../model/doa/ProjectDOA.php');
+require_once('../database/Database.php');
+require_once('../doa/ProjectDOA.php');
 
 use database\Database;
 use doa\ProjectDOA;

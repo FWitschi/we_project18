@@ -11,7 +11,7 @@ include 'landingheader.php';
 ?>
 
 <div id="signup-div" style="height:100%;">
-    <form id="signup-form" action="/controller/signupcontroller.php" method="post">
+    <form id="signup-form" action="../controller/signupcontroller.php" method="post">
         <h1>Sign up</h1>
         <input class="form-control" type="text" required="" name="firstname" placeholder="First name">
         <input class="form-control" type="text" required="" name="lastname" placeholder="Last name">
@@ -22,4 +22,4 @@ include 'landingheader.php';
     </form>
 </div>
 
-<?php include 'landingfooter.php' ; ?>
+<?php include 'landingfooter.php'; ?>

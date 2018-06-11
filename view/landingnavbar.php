@@ -8,7 +8,11 @@
 ?>
 
 <nav class="navbar navbar-light navbar-expand-md" id="navbar">
-    <div class="container-fluid"><a class="navbar-brand" href="features.php"><img src="../assets/img/timecatcher-icon.png" class="logo"><strong>&nbsp; Time Manager</strong></a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="features.php">
+            <img src="assets/img/timecatcher-icon.png" class="logo">
+            <strong>&nbsp; Time Manager</strong>
+        </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>

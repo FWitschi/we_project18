@@ -38,4 +38,4 @@ include 'landingheader.php';
     </div>
 </div>
 
-<?php include 'landingfooter.php' ; ?>
+<?php include 'landingfooter.php'; ?>

@@ -14,18 +14,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600">
-    <link rel="stylesheet" href="../assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="../assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body id="home-div">
 <p></p>
 <h1 class="text-left menu-heading">Modify Project</h1>
 <div>
-    <form action="/controller/editprojectcontroller.php" id="createproject-form" method="post">
+    <form action="../controller/editprojectcontroller.php" id="createproject-form" method="post">
         <p class="newproject-paragraph">
             <label>Change Project Owner (Remember: Name has to be unique)</label>
         </p>
@@ -57,7 +57,7 @@
             <button class="btn btn-primary" type="submit">Change Properties</button>
         </p>
         <p class="text-center newproject-paragraph">
-            <a class="btn btn-primary" role="button" href="/view/user/questiondeleteproject.php">DELETE PROJECT</a>
+            <a class="btn btn-primary" role="button" href="questiondeleteproject.php">DELETE PROJECT</a>
         </p>
     </form>
 </div>
@@ -69,4 +69,4 @@
     }
 </script>
 
-<?php include 'userfooter.php' ; ?>
+<?php include 'userfooter.php'; ?>

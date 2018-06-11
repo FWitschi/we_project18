@@ -15,7 +15,7 @@ $someVar = $_SESSION['userID'];
 
 <h1 class="menu-heading">Create new Project</h1>
 <div>
-    <form id="createproject-form" action="/controller/newprojectcontroller.php" method="post">
+    <form id="createproject-form" action="../controller/newprojectcontroller.php" method="post">
         <p class="newproject-paragraph">
             <label>Project Owner</label>
         </p>
@@ -56,4 +56,4 @@ $someVar = $_SESSION['userID'];
     }
 </script>
 
-<?php include 'userfooter.php' ; ?>
+<?php include 'userfooter.php'; ?>
