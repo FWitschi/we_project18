@@ -15,13 +15,17 @@
     - [UC-4 Profile](#uc-4-profile)
     - [UC-5 Modify Project](#uc-5-modify-project)
 - [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
-    - [UC-1 Register/Login](#uc-1-register-and-login)
-    - [UC-2 Project Overview](#uc-2-project-overview)
-    - [UC-3 Create Project](#uc-3-create-project)
-    - [UC-4 Profile](#uc-4-profile)
-    - [UC-5 Modify Project](#uc-5-modify-project)   
-
-
+    - [Table: authtoken](#table-authtoken)
+    - [Table: user](#table-user)
+    - [Table: project](#table-project)
+- [Wireframe Diagrams](#wireframe-diagrams)
+    - [Initial Page](#initial-page)
+    - [Project Overview Page](#project-overview-page)
+    - [Sign Up Page](#sign-up-page)
+    - [Create Project Page](#create-project-page)
+    - [Profile Page](#profile-page)
+    - [Modify Project Page](#modify-project-page)
+- [Heroku Link](#heroku-link)
 <br>
 <br>
 
