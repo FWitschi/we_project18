@@ -9,7 +9,7 @@
     - [Create Project](#create-project)
     - [Profile](#profile)
 - [Use Cases](#use-cases)
-    - [UC-1 Register/Login](#uc-1-register-login)
+    - [UC-1 Register/Login](#uc-1-register-/-login)
     - [UC-2 Project Overview](#uc-2-project-overview)
     - [UC-3 Create Project](#uc-3-create-project)
     - [UC-4 Profile](#uc-4-profile)
