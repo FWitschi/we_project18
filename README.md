@@ -50,8 +50,93 @@ Just update or delete your account as you wish.
 <br>
 <br>
 
+##### Use Cases
+The web application has the following five use case scenarios: Register/Login, Project Overview, 
+Create Project, Profile, Modify Project.
+<br>
+<br>
+
+_UC-1 Login/Register_
+<br>
+![](modelling/usecases/UC-1_Login_Register.png)
+<br>
+<br>
+
+_UC-2 Project Overview_
+<br>
+![](modelling/usecases/UC-2_ProjectOverview.png)
+<br>
+<br>
+
+_UC-3 Create Project_
+<br>
+![](modelling/usecases/UC-3_CreateProject.png)
+<br>
+<br>
+
+_UC-4 Profile_
+<br>
+![](modelling/usecases/UC-4_Profile.png)
+<br>
+<br>
+
+_UC-5 Modify Project_
+<br>
+![](modelling/usecases/UC-5_ModifyProject.png)
+<br>
+<br>
+
 ##### Entity Relationship Diagram (ERD)
 See below the ERD for the web application. Note: The table "authtoken" has no function yet but has
 been created in order to support further extension of the application in terms of security.
 
-![](img/ERD_WE_PM.png)
+![](modelling/erd/ERD_WE_PM.png)
+<br>
+
+From this diagram the following SQL queries can be derived:
+<br>
+
+_Table: authtoken_
+<br>
+CREATE TABLE `authtoken` (<br>
+  `ID` int(11) unsigned NOT NULL AUTO_INCREMENT,<br>
+  `USER_ID` int(7) unsigned NOT NULL,<br>
+  `SELECTOR` varchar(255) NOT NULL DEFAULT '',<br>
+  `VALIDATOR` varchar(255) NOT NULL DEFAULT '',<br>
+  `EXPIRATION` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,<br>
+  `TYPE` int(10) NOT NULL,<br>
+  PRIMARY KEY (`ID`),<br>
+  KEY `fk_userID_authtoken` (`USER_ID`),<br>
+  CONSTRAINT `fk_userID_authtoken` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`ID`) 
+  ON DELETE CASCADE ON UPDATE NO ACTION
+)<br>
+
+_Table: user_
+<br>
+CREATE TABLE `user` (<br>
+  `ID` int(7) unsigned NOT NULL AUTO_INCREMENT,<br>
+  `FIRST_NAME` varchar(255) NOT NULL DEFAULT '',<br>
+  `LAST_NAME` varchar(255) NOT NULL DEFAULT '',<br>
+  `EMAIL` varchar(255) NOT NULL DEFAULT '',<br>
+  `PASSWORD` varchar(255) NOT NULL DEFAULT '',<br>
+  PRIMARY KEY (`ID`),<br>
+  UNIQUE KEY `EMAIL` (`EMAIL`)
+)<br>
+
+_Table: project_
+<br>
+CREATE TABLE `project` (<br>
+  `ID` int(25) unsigned NOT NULL AUTO_INCREMENT,<br>
+  `USER_ID` int(7) unsigned NOT NULL,<br>
+  `PROJECT_NAME` varchar(255) NOT NULL DEFAULT '',<br>
+  `PROJECT_DESCRIPTION` text NOT NULL,<br>
+  `P_STARTDATE` date NOT NULL,<br>
+  `P_DURATION` varchar(255) NOT NULL DEFAULT '',<br>
+  `P_OWNER` varchar(255) NOT NULL DEFAULT '',<br>
+  `P_EMPLOYEES` text NOT NULL,<br>
+  PRIMARY KEY (`ID`),<br>
+  KEY `fk_userID_project` (`USER_ID`),<br>
+  CONSTRAINT `fk_userID_project` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`ID`) 
+  ON DELETE CASCADE ON UPDATE NO ACTION
+)<br>
+
