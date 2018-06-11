@@ -46,4 +46,4 @@ the planned time (numbers in weeks) to spend on the project.
 
 _Profile_
 <br>
-Just update or delete your account as you wish
+Just update or delete your account as you wish.

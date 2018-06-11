@@ -27,6 +27,6 @@ $message = "
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-$headers .= 'From: <resetpassword@projectmanager.ch>' . "\r\n";
+$headers .= 'From: <projectmanager.we.18@gmail.com>' . "\r\n";
 
 mail($to, $subject, $message, $headers);
