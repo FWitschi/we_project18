@@ -3,17 +3,17 @@
 ##### Table of Contents
 - [Project Manager: Description](#project-manager-description)
 - [Functionalities: Brief Description](#functionalities-brief-description)
-    - [Regier](#functionalities-brief-description-register)
-    - [Login](#functionalities-brief-description-login)
-    - [Project Overview](#functionalities-brief-description-project-overview)
-    - [Create Project](#functionalities-brief-description-create-project)
-    - [Profile](#functionalities-brief-description-profile)
+    - [Register](#register)
+    - [Login](#login)
+    - [Project Overview](#project-overview)
+    - [Create Project](#create-project)
+    - [Profile](#profile)
 - [Use Cases](#use-cases)
-    - [UC-1 Register/Login](#use-cases-uc-1-register-login)
-    - [UC-2 Project Overview](#use-cases-uc-2-project-overview)
-    - [UC-3 Create Project](#use-cases-uc-3-create-project)
-    - [UC-4 Profile](#use-cases-uc-4-profile)
-    - [UC-5 Modify Project](#use-cases-uc-5-modify-project)   
+    - [UC-1 Register/Login](#uc-1-register-login)
+    - [UC-2 Project Overview](#uc-2-project-overview)
+    - [UC-3 Create Project](#uc-3-create-project)
+    - [UC-4 Profile](#uc-4-profile)
+    - [UC-5 Modify Project](#uc-5-modify-project)   
 
 <br>
 <br>
