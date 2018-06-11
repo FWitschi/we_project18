@@ -27,7 +27,7 @@
 <div>
     <form action="../controller/editprojectcontroller.php" id="createproject-form" method="post">
         <p class="newproject-paragraph">
-            <label>Change Project Owner (Remember: Name has to be unique)</label>
+            <label>Change Project Owner</label>
         </p>
         <input class="form-control" name="P_OWNER" type="text" placeholder="Change project owner">
         <p class="newproject-paragraph">

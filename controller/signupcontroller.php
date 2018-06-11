@@ -16,8 +16,9 @@ if ($_POST['password'] == $_POST['passwordRep']) {
     UserDOA::registerUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['password'], Database::connect());
     setcookie('email', $_POST['email']);
     $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $extra = "../view/projectoverview.php";
-    header("Location: http://$host/$extra");
+    header("Location: http://$host$uri/$extra");
 } else {
     echo "NOT SAME PASSWORD!";
 }

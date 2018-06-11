@@ -34,6 +34,7 @@ if (isset($_POST)) {
         ProjectDOA::updateProject($_COOKIE['selected_project_id'], "P_DURATION", $_POST['P_DURATION'], Database::connect());
     }
     $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $extra = "../view/projectoverview.php";
     header("Location: http://$host$uri/$extra");
 } else {

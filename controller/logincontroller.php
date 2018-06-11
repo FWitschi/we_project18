@@ -19,6 +19,7 @@ if (UserDOA::verifyUser($_POST['email'], $_POST['password'], Database::connect()
     header("Location: http://$host$uri/$extra");
 } else {
     $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $extra = "../view/wrongcredentials.php";
-    header("Location: http://$host/$extra");
+    header("Location: http://$host$uri/$extra");
 }
