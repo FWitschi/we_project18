@@ -1,11 +1,12 @@
 ## Web Engineering Project 2018
 
 ##### Table of Contents
-sdfssdfv
+- [Project Manager: Description](#project-manager-description)
+- [Functionalities: Brief Description](#functionalities-brief-description)
 <br>
 <br>
 
-##### Project Manager - Description
+##### Project Manager: Description
 The web-application Project Manager is a small tool that allows private or business users to
 store and manage their own projects. They have the ability to create or modify/delete a project 
 (properties include: Project Name, Project Owner, Project Description, Project Employees (who is
@@ -15,7 +16,7 @@ or a specifically selected project as a pdf and print it as needed.
 <br>
 <br>
 
-##### Functionalities - Brief Description
+##### Functionalities: Brief Description
 _Register_
 <br>
 Enter your information to create a user account that is stored in the database
