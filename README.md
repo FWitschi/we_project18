@@ -54,4 +54,4 @@ Just update or delete your account as you wish.
 See below the ERD for the web application. Note: The table "authtoken" has no function yet but has
 been created in order to support further extension of the application in terms of security.
 
-[] (img/ERD_WE_PM.png)
+![](img/ERD_WE_PM.png)
