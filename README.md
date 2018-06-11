@@ -140,3 +140,69 @@ CREATE TABLE `project` (<br>
   ON DELETE CASCADE ON UPDATE NO ACTION
 )<br>
 
+##### Wireframe Diagrams
+This section contains a few wireframe diagrams that demonstrate how the user interface looks (rough
+estimation) and how they are connected to one antoher; in other words, what page is connected to
+the another one. Note: Only pages that have valuable functions have been drawn into diagrams.
+<br>
+
+_Initial Page_
+<br>
+![](modelling/wireframe/Login-Page.png)
+<br>
+From this page, if you log in, you get to the project overview page - if you will have to register
+you may get to the sign up page.
+<br>
+<br>
+
+_Project Overview Page_
+<br>
+![](modelling/wireframe/ProjectOverview-Page.png)
+<br>
+Here you can get to "Create Project", "Profile", "Modify a particular project", or "view a project
+as a pdf". Finally, you also could log out to get back to the login interface.
+<br>
+<br>
+
+_Sign Up Page_
+<br>
+![](modelling/wireframe/Signup-Page.png)
+<br>
+If signing up, you will be directed to the project overview page - if your entries are correct.
+<br>
+<br>
+
+_Create Project Page_
+<br>
+![](modelling/wireframe/CreateProject-Page.png)
+<br>
+If creating a new project after setting all the required properties, you will be directed to the
+project overview page - the new project will be listed there.
+<br>
+<br>
+
+_Profile Page_
+<br>
+![](modelling/wireframe/Profile-Page.png)
+<br>
+From the profile page you get either to the project overview (if changing any field and pressed
+change properties) or you get back to the login field if pressing "delete account".
+<br>
+<br>
+
+_Modify Project Page_
+<br>
+![](modelling/wireframe/ModifyProject-Page.png)
+<br>
+In both cases - changing properties, deleting project - you will be directed to the project overview
+where the updated list of your projects will be listed.
+<br>
+<br>
+
+##### Heroku Link
+Please find below the link to the deployed Heroku application and play a4round:
+<br>
+https://we-projectmanager.herokuapp.com/
+<br>
+<br>
+HAVE FUN PLAYING WITH THE APP.
