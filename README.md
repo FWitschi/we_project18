@@ -1,4 +1,4 @@
-## Web Engineering Project 2018
+## Web Engineering Project 2018 by Fabian Witschi
 
 #### Table of Contents
 - [Project Manager: Description](#project-manager-description)
