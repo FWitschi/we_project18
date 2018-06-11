@@ -9,11 +9,18 @@
     - [Create Project](#create-project)
     - [Profile](#profile)
 - [Use Cases](#use-cases)
-    - [UC-1 Register/Login](#uc-1-register-/-login)
+    - [UC-1 Register/Login](#uc-1-register-and-login)
+    - [UC-2 Project Overview](#uc-2-project-overview)
+    - [UC-3 Create Project](#uc-3-create-project)
+    - [UC-4 Profile](#uc-4-profile)
+    - [UC-5 Modify Project](#uc-5-modify-project)
+- [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-(erd))
+    - [UC-1 Register/Login](#uc-1-register-and-login)
     - [UC-2 Project Overview](#uc-2-project-overview)
     - [UC-3 Create Project](#uc-3-create-project)
     - [UC-4 Profile](#uc-4-profile)
     - [UC-5 Modify Project](#uc-5-modify-project)   
+
 
 <br>
 <br>
@@ -64,7 +71,7 @@ Create Project, Profile, Modify Project.
 <br>
 <br>
 
-##### _UC-1 Login/Register_
+##### _UC-1 Register and Login_
 ![](modelling/usecases/UC-1_Login_Register.png)
 <br>
 <br>
