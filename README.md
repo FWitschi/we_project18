@@ -1,6 +1,6 @@
 ## Web Engineering Project 2018
 
-##### Table of Contents
+#### Table of Contents
 - [Project Manager: Description](#project-manager-description)
 - [Functionalities: Brief Description](#functionalities-brief-description)
     - [Register](#register)
@@ -18,7 +18,7 @@
 <br>
 <br>
 
-##### Project Manager: Description
+#### Project Manager: Description
 The web-application Project Manager is a small tool that allows private or business users to
 store and manage their own projects. They have the ability to create or modify/delete a project 
 (properties include: Project Name, Project Owner, Project Description, Project Employees (who is
@@ -28,78 +28,68 @@ or a specifically selected project as a pdf and print it as needed.
 <br>
 <br>
 
-##### Functionalities: Brief Description
-_Register_
-<br>
+#### Functionalities: Brief Description
+#####_Register_
 Enter your information to create a user account that is stored in the database
 <br>
 <br>
 
-_Login_
-<br>
+#####_Login_
 Log in the page if you have a create your account - forgot your password? No worries, press the link
 below and reset your password with a link sent via email (attention: email only works when connected
 to a remote server)
 <br>
 <br>
 
-_Project Overview_
-<br>
+#####_Project Overview_
 View all projects that you have created on one page with the properties inclusive. In addition
 you can modify them or view them as a pdf.
 <br>
 <br>
-_Create Project_
-<br>
+#####_Create Project_
 You are able to create your own project by setting the properties. Set a project owner, a project
 name, a project description, the names of the employees working on the project, a starting date, and
 the planned time (numbers in weeks) to spend on the project.
 <br>
 <br>
 
-_Profile_
-<br>
+#####_Profile_
 Just update or delete your account as you wish.
 <br>
 <br>
 
-##### Use Cases
+#### Use Cases
 The web application has the following five use case scenarios: Register/Login, Project Overview, 
 Create Project, Profile, Modify Project.
 <br>
 <br>
 
-_UC-1 Login/Register_
-<br>
+#####_UC-1 Login/Register_
 ![](modelling/usecases/UC-1_Login_Register.png)
 <br>
 <br>
 
-_UC-2 Project Overview_
-<br>
+#####_UC-2 Project Overview_
 ![](modelling/usecases/UC-2_ProjectOverview.png)
 <br>
 <br>
 
-_UC-3 Create Project_
-<br>
+#####_UC-3 Create Project_
 ![](modelling/usecases/UC-3_CreateProject.png)
 <br>
 <br>
 
-_UC-4 Profile_
-<br>
+#####_UC-4 Profile_
 ![](modelling/usecases/UC-4_Profile.png)
 <br>
 <br>
 
-_UC-5 Modify Project_
-<br>
+#####_UC-5 Modify Project_
 ![](modelling/usecases/UC-5_ModifyProject.png)
 <br>
 <br>
 
-##### Entity Relationship Diagram (ERD)
+#### Entity Relationship Diagram (ERD)
 See below the ERD for the web application. Note: The table "authtoken" has no function yet but has
 been created in order to support further extension of the application in terms of security.
 
@@ -108,9 +98,9 @@ been created in order to support further extension of the application in terms o
 
 From this diagram the following SQL queries can be derived:
 <br>
-
-_Table: authtoken_
 <br>
+
+#####_Table: authtoken_
 CREATE TABLE `authtoken` (<br>
   `ID` int(11) unsigned NOT NULL AUTO_INCREMENT,<br>
   `USER_ID` int(7) unsigned NOT NULL,<br>
@@ -123,9 +113,9 @@ CREATE TABLE `authtoken` (<br>
   CONSTRAINT `fk_userID_authtoken` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`ID`) 
   ON DELETE CASCADE ON UPDATE NO ACTION
 )<br>
-
-_Table: user_
 <br>
+
+#####_Table: user_
 CREATE TABLE `user` (<br>
   `ID` int(7) unsigned NOT NULL AUTO_INCREMENT,<br>
   `FIRST_NAME` varchar(255) NOT NULL DEFAULT '',<br>
@@ -135,9 +125,9 @@ CREATE TABLE `user` (<br>
   PRIMARY KEY (`ID`),<br>
   UNIQUE KEY `EMAIL` (`EMAIL`)
 )<br>
-
-_Table: project_
 <br>
+
+#####_Table: project_
 CREATE TABLE `project` (<br>
   `ID` int(25) unsigned NOT NULL AUTO_INCREMENT,<br>
   `USER_ID` int(7) unsigned NOT NULL,<br>
@@ -153,14 +143,13 @@ CREATE TABLE `project` (<br>
   ON DELETE CASCADE ON UPDATE NO ACTION
 )<br>
 
-##### Wireframe Diagrams
+#### Wireframe Diagrams
 This section contains a few wireframe diagrams that demonstrate how the user interface looks (rough
 estimation) and how they are connected to one antoher; in other words, what page is connected to
 the another one. Note: Only pages that have valuable functions have been drawn into diagrams.
 <br>
 
-_Initial Page_
-<br>
+#####_Initial Page_
 ![](modelling/wireframe/Login-Page.png)
 <br>
 From this page, if you log in, you get to the project overview page - if you will have to register
@@ -168,8 +157,7 @@ you may get to the sign up page.
 <br>
 <br>
 
-_Project Overview Page_
-<br>
+#####_Project Overview Page_
 ![](modelling/wireframe/ProjectOverview-Page.png)
 <br>
 Here you can get to "Create Project", "Profile", "Modify a particular project", or "view a project
@@ -177,16 +165,14 @@ as a pdf". Finally, you also could log out to get back to the login interface.
 <br>
 <br>
 
-_Sign Up Page_
-<br>
+#####_Sign Up Page_
 ![](modelling/wireframe/Signup-Page.png)
 <br>
 If signing up, you will be directed to the project overview page - if your entries are correct.
 <br>
 <br>
 
-_Create Project Page_
-<br>
+#####_Create Project Page_
 ![](modelling/wireframe/CreateProject-Page.png)
 <br>
 If creating a new project after setting all the required properties, you will be directed to the
@@ -194,8 +180,7 @@ project overview page - the new project will be listed there.
 <br>
 <br>
 
-_Profile Page_
-<br>
+#####_Profile Page_
 ![](modelling/wireframe/Profile-Page.png)
 <br>
 From the profile page you get either to the project overview (if changing any field and pressed
@@ -203,8 +188,7 @@ change properties) or you get back to the login field if pressing "delete accoun
 <br>
 <br>
 
-_Modify Project Page_
-<br>
+#####_Modify Project Page_
 ![](modelling/wireframe/ModifyProject-Page.png)
 <br>
 In both cases - changing properties, deleting project - you will be directed to the project overview
@@ -212,7 +196,7 @@ where the updated list of your projects will be listed.
 <br>
 <br>
 
-##### Heroku Link
+#### Heroku Link
 Please find below the link to the deployed Heroku application and play a4round:
 <br>
 https://we-projectmanager.herokuapp.com/
