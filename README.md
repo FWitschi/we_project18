@@ -29,31 +29,31 @@ or a specifically selected project as a pdf and print it as needed.
 <br>
 
 #### Functionalities: Brief Description
-#####_Register_
+##### _Register_
 Enter your information to create a user account that is stored in the database
 <br>
 <br>
 
-#####_Login_
+##### _Login_
 Log in the page if you have a create your account - forgot your password? No worries, press the link
 below and reset your password with a link sent via email (attention: email only works when connected
 to a remote server)
 <br>
 <br>
 
-#####_Project Overview_
+##### _Project Overview_
 View all projects that you have created on one page with the properties inclusive. In addition
 you can modify them or view them as a pdf.
 <br>
 <br>
-#####_Create Project_
+##### _Create Project_
 You are able to create your own project by setting the properties. Set a project owner, a project
 name, a project description, the names of the employees working on the project, a starting date, and
 the planned time (numbers in weeks) to spend on the project.
 <br>
 <br>
 
-#####_Profile_
+##### _Profile_
 Just update or delete your account as you wish.
 <br>
 <br>
@@ -64,27 +64,27 @@ Create Project, Profile, Modify Project.
 <br>
 <br>
 
-#####_UC-1 Login/Register_
+##### _UC-1 Login/Register_
 ![](modelling/usecases/UC-1_Login_Register.png)
 <br>
 <br>
 
-#####_UC-2 Project Overview_
+##### _UC-2 Project Overview_
 ![](modelling/usecases/UC-2_ProjectOverview.png)
 <br>
 <br>
 
-#####_UC-3 Create Project_
+##### _UC-3 Create Project_
 ![](modelling/usecases/UC-3_CreateProject.png)
 <br>
 <br>
 
-#####_UC-4 Profile_
+##### _UC-4 Profile_
 ![](modelling/usecases/UC-4_Profile.png)
 <br>
 <br>
 
-#####_UC-5 Modify Project_
+##### _UC-5 Modify Project_
 ![](modelling/usecases/UC-5_ModifyProject.png)
 <br>
 <br>
@@ -100,7 +100,7 @@ From this diagram the following SQL queries can be derived:
 <br>
 <br>
 
-#####_Table: authtoken_
+##### _Table: authtoken_
 CREATE TABLE `authtoken` (<br>
   `ID` int(11) unsigned NOT NULL AUTO_INCREMENT,<br>
   `USER_ID` int(7) unsigned NOT NULL,<br>
@@ -115,7 +115,7 @@ CREATE TABLE `authtoken` (<br>
 )<br>
 <br>
 
-#####_Table: user_
+##### _Table: user_
 CREATE TABLE `user` (<br>
   `ID` int(7) unsigned NOT NULL AUTO_INCREMENT,<br>
   `FIRST_NAME` varchar(255) NOT NULL DEFAULT '',<br>
@@ -127,7 +127,7 @@ CREATE TABLE `user` (<br>
 )<br>
 <br>
 
-#####_Table: project_
+##### _Table: project_
 CREATE TABLE `project` (<br>
   `ID` int(25) unsigned NOT NULL AUTO_INCREMENT,<br>
   `USER_ID` int(7) unsigned NOT NULL,<br>
@@ -149,7 +149,7 @@ estimation) and how they are connected to one antoher; in other words, what page
 the another one. Note: Only pages that have valuable functions have been drawn into diagrams.
 <br>
 
-#####_Initial Page_
+##### _Initial Page_
 ![](modelling/wireframe/Login-Page.png)
 <br>
 From this page, if you log in, you get to the project overview page - if you will have to register
@@ -157,7 +157,7 @@ you may get to the sign up page.
 <br>
 <br>
 
-#####_Project Overview Page_
+##### _Project Overview Page_
 ![](modelling/wireframe/ProjectOverview-Page.png)
 <br>
 Here you can get to "Create Project", "Profile", "Modify a particular project", or "view a project
@@ -165,14 +165,14 @@ as a pdf". Finally, you also could log out to get back to the login interface.
 <br>
 <br>
 
-#####_Sign Up Page_
+##### _Sign Up Page_
 ![](modelling/wireframe/Signup-Page.png)
 <br>
 If signing up, you will be directed to the project overview page - if your entries are correct.
 <br>
 <br>
 
-#####_Create Project Page_
+##### _Create Project Page_
 ![](modelling/wireframe/CreateProject-Page.png)
 <br>
 If creating a new project after setting all the required properties, you will be directed to the
@@ -180,7 +180,7 @@ project overview page - the new project will be listed there.
 <br>
 <br>
 
-#####_Profile Page_
+##### _Profile Page_
 ![](modelling/wireframe/Profile-Page.png)
 <br>
 From the profile page you get either to the project overview (if changing any field and pressed
@@ -188,7 +188,7 @@ change properties) or you get back to the login field if pressing "delete accoun
 <br>
 <br>
 
-#####_Modify Project Page_
+##### _Modify Project Page_
 ![](modelling/wireframe/ModifyProject-Page.png)
 <br>
 In both cases - changing properties, deleting project - you will be directed to the project overview
